@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+.header{
+    height: 30vh;
+    width: 100%;
+    padding: 0 8%;
+    background: white;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-links{
+    padding: 28px 0;
+
+}
+.nav-links li{
+    display: inline-block;
+    margin: 35px 15px;
+    font-size: large;
+
+}
+.nav-links li a{
+    text-decoration: none;
+    color:white;
+    padding: 5px 0;
+    position: relative;
+    color: dimgray;
+}
+.nav-links li a::after{
+    content:'';
+    background: #F7AF27;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+.nav-links li a:hover::after{
+    width: 100%;
+}
+.nav-linksSign{
+    padding: 28px 0;
+
+}
+.nav-linksSign li{
+    display: inline-block;
+    margin: 35px 15px;
+    font-size: 20px;
+
+}
+.nav-linksSign li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+    position: relative;
+    font-weight: bold;
+
+
+}
+.nav-linksSign li a::after{
+    content:'';
+    background: #F7AF27;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+.nav-linksSign li a:hover::after{
+    width: 100%;
+}
+.btn{
+    background: #F7AF27;
+    color: black;
+    padding: 10px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+h1.mainTitle{
+    margin-top: 0px ;
+    font-size: 50px;
+    font-family: myFont;
+    margin-left: -50px;
+    color: #253B41;
+}
+@font-face{
+    font-family:myFont;
+    src: url("../extra/RockSalt-Regular.ttf");
+
+}
+@font-face {
+    font-family: secFont;
+    src: url("../extra/Anton-Regular.ttf");
+}
+@font-face {
+    font-family: thirdFont;
+    src: url("../extra/Montserrat-Light.ttf");
+}
+@font-face {
+    font-family: fourthFont;
+    src: url("../extra/OpenSansCondensed-LightItalic.ttf");
+}
+@font-face {
+    font-family: fifthFont;
+    src: url("../extra/Itim-Regular.ttf");
+}
+img.mainGif{
+    /*background-color: #FFF5DB;*/
+    width: 700px;
+    height: 500px;
+    margin-right: 100px;
+    border-radius: 100px;
+
+}
+p.mainQuote{
+    color: #253B41;
+    font-size: 40px;
+    margin-left: 150px;
+    margin-top: 50px;
+    font-family: secFont;
+}
+p.SignUp {
+    width: 10%;
+    background: #F7AF27;
+    border-radius: 40px;
+    margin-left: 200px;
+    margin-top: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    break-before: left;
+}
+div.pics{
+    /*margin-top: 200px;*/
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+p.triangle{
+    margin-top: 180px;
+    font-size: 30px;
+    color: #253B41;
+    font-weight: bold;
+    font-family: thirdFont;
+
+}
+p.triangle2{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #595959  ;
+    margin-bottom: 150px;
+    font-family: thirdFont;
+    font-weight: bold;
+
+}
+img.recipe{
+    /*margin-right: 120px;*/
+    /*margin-bottom: 200px;*/
+    /*background-color: #FFF5DB;*/
+    margin-top: 100px;
+}
+
+p.paraRec{
+    font-size: 27px;
+    margin-left:100px ;
+    margin-top: -105px;
+    color: #253B41;
+    /*margin-bottom: 400px;*/
+    font-family: thirdFont
+}
+
+
+.footer{
+    background-color: #253B41;
+    color: white;
+    height: 300px;
+    position: relative;
+}
+.footer .footer-bottom{
+    margin-bottom: 0;
+    background-color: darkslategray;
+    color: white;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.footer .footer-content{
+    /*border: 1px solid white;*/
+    height: 300px;
+    display: flex;
+}
+.footer .footer-content .footer-section{
+    flex: 1;
+    padding: 25px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+.footer .footer-content h1 , .footer .footer-content h2{
+    color: white;
+}
+.footer .footer-content .about .contact span{
+    display: block;
+    font-size: 1.1em;
+    font-family: thirdFont;
+}
+h1.logo-text{
+    font-family: myFont;
+}
+div.linkColor a {
+    color: white;
+    position: relative;
+}

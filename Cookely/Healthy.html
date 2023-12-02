@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookely.com</title>
+    <link href="style/style2.css" rel="stylesheet" type="text/css">
+    <link href="style/style4.css" rel="stylesheet" type="text/css">
+    <style>
+        a:link{
+            text-decoration: none;
+        }
+
+    </style>
+    <div class="header">
+
+        <nav class="navC" role="navigation">
+
+            <h1 class="mainTitle" align="left" style="font-size: 20px; margin-top: -50px">COOKELY</h1>
+            <ul class="nav-links" style="margin-top: -50px;margin-left: 0px;">
+                <li><a href="http://localhost/web2021c/Cookely/main.html" target="_self">Home</a></li>
+                <li><a href="http://localhost/web2021c/Cookely/Communities.html" target="_self">Communities</a></li>
+                <li><a href="">Saved</a></li>
+                <li><a href="" style="margin-top: 10px">Planner</a></li>
+
+                <input style="margin-top: -10px;margin-left: 100px;"  class="btn" type="text" src="gif/searchIcon.png" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search..">
+                <!--            <button style="margin-left: 20px;  margin-top: -10px; margin-right: 0px"  class="profile" > </button>-->
+                <div class="dropdown">
+                    <button style="margin-left: 20px; font-family: thirdFont; font-weight: bolder;
+                 font-size:15px; margin-top: -10px; margin-right: 0px" onclick="myFunction()"
+                            class="dropbtn">My profile</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#home"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                        </svg>&nbsp;&nbsp;Profile</a>
+                        <a href="#about" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                            <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                        </svg>&nbsp;&nbsp;Log out</a>
+
+                    </div>
+                </div>
+
+                <script>
+                    /* When the user clicks on the button,
+                    toggle between hiding and showing the dropdown content */
+                    function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                    }
+
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(event) {
+                        if (!event.target.matches('.dropbtn')) {
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                                var openDropdown = dropdowns[i];
+                                if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                }
+                            }
+                        }
+                    }
+                </script>
+            </ul>
+        </nav>
+    </div>
+
+</head>
+<body>
+<div class="main" style="margin-top: -5px; "><br><br>
+    <p style="margin-bottom: 20px; font-family: fifthFont ; font-size: 35px; font-weight: bolder; color: #253B41;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspBest Recipes</p>
+
+    <div class="image"style="display: inline-block;">
+
+        <a href="http://localhost/web2021c/Cookely/cabbage%20_salad.html" ><img src="gif/Crunchy-Cabbage-Salad-drizzle-V1.jpg"
+             class="healthy" alt="healthy eating" ></a>
+        <div class="img_overlay">
+            <div class="img_title">Crunchy Cabbage <br>Salad</div>
+        </div>
+
+    </div>
+
+    <div class="image"style="display: inline-block;">
+        <a href=""><img style="margin-left: 125px;" src="gif/healthy2.jpg" class="healthy" alt="meat" ></a>
+        <div class="img_overlay" style="margin-left: 125px;">
+            <div class="img_title">Tuna Salad</div>
+        </div>
+    </div>
+
+    <div class="image"style="display: inline-block;">
+        <a href="" ><img style="margin-left: 190px;;" src="gif/vegetarian-sushi-bowl-recipe-1.jpg" class="healthy" alt="dessert" ></a>
+        <div class="img_overlay" style="margin-left: 190px;">
+            <div class="img_title">Vegan Sushi <br>Bowls</div>
+        </div>
+    </div>
+</div>
+
+<span>
+    <p style="margin-left: 320px;margin-bottom: 30px; margin-top: -50px; font-size: 15px;color: #253B41"><a href="" style="color: #253B41">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" style="color: #253B41"> Communities</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" style="color: #253B41">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" style="color: #253B41">Recipes</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" style="color: #253B41">Terms & Conditions</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;@ 2021-2022</p>
+
+</span>
+<!--<div class="main" style="margin-top: -5px">-->
+<!--<p style="margin-bottom: 20px; margin-left: 65px; font-family: fifthFont ; font-size: 35px; font-weight: bolder; color: #253B41" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>Recipes</p>-->
+<!--    <a href="http://localhost/web2021c/Cookely/cabbage%20_salad.html"><img src="gif/Crunchy-Cabbage-Salad-drizzle-V1.jpg" class="healthy" alt="healthy eating" ></a>-->
+<!--    <h1 class="text"> Crunchy Cabbage <br>Salad</h1>-->
+<!--    <a href=""><img src="gif/Tuna%20Salad.png" class="healthy" alt="healthy eating" ></a>-->
+<!--    <h1 class="text1"> Tuna Salad </h1>-->
+<!--    <a href=""><img src="gif/vegetarian-sushi-bowl-recipe-1.jpg" class="healthy" alt="healthy eating" ></a>-->
+<!--    <h1 class="text2"> Vegan Sushi <br>Bowls </h1>-->
+<!--</div>-->
+</body>
+</html>
